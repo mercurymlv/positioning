@@ -100,7 +100,14 @@ footer {
     content: "";
     display: table;
     clear: both;
+
   }
+
+.my-column a {
+    color: lightcyan;
+    text-decoration: none;
+}
+
  
 @media all and (max-width:500px) {
     .my-column {
@@ -197,7 +204,7 @@ footer {
     }
     
     h1 {
-        width: 79%;
+        width: 80%;
         padding-left: 1%;
     }
     
@@ -217,7 +224,7 @@ footer {
     }
     
     h1 {
-        width: 89%;
+        width: 90%;
         padding-left: 1%;
     }
     
