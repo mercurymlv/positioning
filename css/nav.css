@@ -1,38 +1,56 @@
 /* Global rules */
+
+
 .topnav {
     margin: auto;
-    background-color: rgb(95,95,95);
+    background-color: rgba(0,0,0,.9);
+    justify-content: space-evenly;
     overflow: auto;
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: whitesmoke;
+    color: linen;
     text-align: center;
-    padding: 12px 12px;
+    padding: 10px 50px;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
+    
 }
 
 .topnav a.hover, .active {
-    background-color: darkcyan;
+    background-color: darkred;
 }
+
+
 
 .topnav .icon {
     display: none;
 }
 
+.mainlogo {
+    width: 60%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    }
+
+
+
+
+
+
 /* Responsive rules - apply when screen width is less than 1200px */
 
 @media screen and (max-width: 1199px) {
-    .topnav a:not(:first-child) {
+    .topnav a {
         display: none;
     }
     
     .topnav a.icon {
-        float: right;
+        float: left;
         display: block;
     }
     
@@ -51,13 +69,33 @@
         right: 0;
         top: 0;
     }
+
+    .banner-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-column {
+        float: none;
+        text-align: center;
+    }
+
+    .eventsbox {
+        width: auto;
+     }
+
 }
 
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
     .topnav {
-        width: 80%;
+        width: 75%;
+    }
+    .banner-row {
+        width: 75%;
     }
 }
 
@@ -66,11 +104,17 @@
     .topnav {
         width: 90%;
     }
+    .banner-row {
+        width: 90%;
+    }
 }
 
 /* PHONE */
 @media all and (max-width:500px) {
     .topnav {
+        width: 100%;
+    }
+    .banner-row {
         width: 100%;
     }
 }
